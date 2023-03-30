@@ -14,7 +14,6 @@ const getWeather = (city) => {
   )
     .then((response) => response.json())
     .then((response) => {
-      console.log(response);
       cloud_pct.innerHTML = response.cloud_pct;
       temp.innerHTML = response.temp;
       temp2.innerHTML = response.temp;
@@ -45,7 +44,6 @@ fetch(
 )
   .then((response) => response.json())
   .then((response) => {
-    console.log(response);
     c_s.innerHTML = response.cloud_pct;
     t_s.innerHTML = response.temp;
     f_s.innerHTML = response.feels_like;
@@ -65,7 +63,6 @@ fetch(
 )
   .then((response) => response.json())
   .then((response) => {
-    console.log(response);
     c_b.innerHTML = response.cloud_pct;
     t_b.innerHTML = response.temp;
     f_b.innerHTML = response.feels_like;
@@ -85,7 +82,6 @@ fetch(
 )
   .then((response) => response.json())
   .then((response) => {
-    console.log(response);
     c_l.innerHTML = response.cloud_pct;
     t_l.innerHTML = response.temp;
     f_l.innerHTML = response.feels_like;
@@ -105,7 +101,6 @@ fetch(
 )
   .then((response) => response.json())
   .then((response) => {
-    console.log(response);
     c_k.innerHTML = response.cloud_pct;
     t_k.innerHTML = response.temp;
     f_k.innerHTML = response.feels_like;
